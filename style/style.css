@@ -1,0 +1,156 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: #DDD;
+    background-color: #DDD;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+a:active, a:visited {
+    color:#49a5e7;
+}
+
+.subheader {
+    font-size:22px
+    color:#232323;
+    font-weight: 300;
+    margin-bottom:5px;
+}
+
+    .subheader .highlight {
+        color:#49a5e7;
+        text-transform:capitalize
+    }
+
+    .subheader .dim {
+        color:#CCC;
+        text-transform:capitalize
+    }
+    
+
+input.details {
+    background-color:#f4f4f4;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size:14pt;
+    color:#c3c7d4;
+    padding:3px;
+}
+
+div.fixedColumnWide {
+    flex: 0 0 300px;
+}
+
+div.fixedColumnSmall {
+    flex: 0 0 200px;
+}
+
+.preSearchWrapper {
+    background-color: #EEE;
+    height:100px;
+    border-radius: 3px;
+    text-align:center;
+    padding-top:40px;
+}
+    .preSearchWrapper h3 {
+        color:#AAA;
+        font-size: 14pt;
+        font-weight: normal;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+.loadingWrapper {
+    padding-top:50px;
+    margin:auto;
+    width:50px;
+}
+
+    .loadingWrapper img {
+        width:50px;
+    }
+
+.selectWrapper {
+    border: 1px solid #ccc;
+    width: 290px;
+    border-radius: 3px;
+    background: #fafafa;
+}
+
+.selectWrapper select {
+    font-size: 12pt;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding: 5px 8px;
+    width: 290px;
+    height: 38px;
+    border: none;
+    box-shadow: none;
+}
+
+.selectWrapper select:focus {
+    outline: none;
+}
+
+.filterButton {
+    font-size: 12pt;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    border: 1px solid #49a5e7;
+    width: 190px;
+    height: 38px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #49a5e7;
+}
+
+#listTable {
+    width:100%;
+    border-spacing: 0px;
+    border-collapse: separate;
+}
+
+    #listTable thead th {
+        font-size: 12pt;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        text-align:left;
+        background-color:#DDD;
+        height:38px;
+        padding: 5px 13px;
+    }
+
+    #listTable tbody td {
+        font-size: 12pt;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        text-align:left;
+        color:#CCC;
+        background-color:#FFF;
+        height:38px;
+        padding: 5px 13px;
+    }
+
+#DetailWrapper {
+
+}
+
+    #DetailWrapper input {
+        font-size: 12pt;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        padding: 5px 13px;
+        width: 290px;
+        height: 38px;
+        border: none;
+        box-shadow: none;
+        margin-bottom:5px;
+    }
