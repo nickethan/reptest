@@ -16,6 +16,7 @@ function appReducer(state = initialState, action) {
       return Object.assign({}, state, {
         reps: [],
         loading: true,
+        error: false,
         initState: false,
       })
     case LOAD_REPS_SUCCESS:
@@ -25,7 +26,7 @@ function appReducer(state = initialState, action) {
       })
     case LOAD_REPS_ERROR:
       return Object.assign({}, state, {
-        error: action.error,
+        error: true,
         loading: false,
       })  
     case SET_REP:

@@ -35,6 +35,11 @@ export const fetchPeople = () => (dispatch, getState) => {
 
   get('http://localhost:3000/' + reptypeValue + '/' + stateValue)
       .end(function(err, res) {
+          if (err) {
+            dispatch({type: LOAD_REPS_ERROR, err });
+            return;
+          }
+
           try {
               var reps = res.body.results;
               dispatch({

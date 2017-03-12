@@ -25,7 +25,18 @@ const RepsContainer = (props) => {
     )
   }
 
-  if (props.reps.length === 0) {
+  if (props.error) {
+    return (
+      <Wrapper>
+        {listHeader}
+        <div className="preSearchWrapper animated fadeIn">
+          <h3>Uh Oh! There was a connection issue.</h3>
+        </div>
+      </Wrapper>
+    )
+  }
+
+  if (props.reps.length === 0 && !props.error) {
     return (
       <Wrapper>
         {listHeader}
@@ -54,6 +65,7 @@ const RepsContainer = (props) => {
 };
 
 RepsContainer.propTypes = {
+  error: PropTypes.bool, 
   loading: PropTypes.bool, 
   initState: PropTypes.bool, 
   reps: PropTypes.arrayOf(PropTypes.shape({
@@ -66,6 +78,7 @@ RepsContainer.propTypes = {
 
 const mapStateToProps = function (state) {
   return {
+    error: state.error, 
     loading: state.loading, 
     initState: state.initState,
     reps: state.reps,
