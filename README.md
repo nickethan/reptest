@@ -5,5 +5,6 @@
 Install via npm.
 
 ```bash
-$ npm install github
+$ npm install
+$ npm start
 ```
